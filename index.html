@@ -54,6 +54,10 @@
             border-radius: 8px;
         }
 
+        audio, video {
+            max-width: 100%;
+        }
+
         button {
             padding: 10px 15px;
             margin-top: 10px;
@@ -127,10 +131,13 @@
 
     <div class="media-box">
         <audio controls>
-            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
-            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
             Browser Anda tidak mendukung elemen audio.
         </audio>
+
+        <p>
+            Gunakan tombol play pada pemutar untuk menjalankan audio.
+        </p>
     </div>
 </section>
 
@@ -145,8 +152,8 @@
 
     <div class="media-box">
         <video width="500" controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
             Browser Anda tidak mendukung elemen video.
         </video>
     </div>
@@ -204,7 +211,8 @@
     <img id="dragImage"
          src="https://www.w3schools.com/html/img_logo.gif"
          draggable="true"
-         ondragstart="drag(event)">
+         ondragstart="drag(event)"
+         alt="Logo HTML">
 
     <div id="dropArea"
          ondrop="drop(event)"
@@ -313,4 +321,3 @@
 
 </body>
 </html>
-
